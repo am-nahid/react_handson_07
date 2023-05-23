@@ -1,38 +1,130 @@
+*{
+  margin: 0;
+  overflow-x: hidden;
+}
+
+   
+
+
 .App {
-  text-align: center;
+
+  background: linear-gradient(180deg, rgba(41,217,219,1) 1%, rgba(215,88,99,1) 26%, rgba(151,179,189,1) 100%);
+background-repeat: no-repeat;
+width: 100vw;
+min-height: 100vh;
+box-sizing: content-box;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.theHeader{
+  display: flex;
+  background-color: blue;
+  color : white;
+  height: 2rem;
+  font-size: 22px;
+  justify-content: space-evenly;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1{
+  padding-top: 3rem;
+  padding-left: 3rem;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.button{
+  position: absolute;
+  right: 3rem;
+  top: 5.5rem;
+  border-radius: 10px;
+  font-size: 20px;
+  padding: 8px 20px;
+}
+
+table{
+  background-color: white;
+  width: 80%;
+  border-collapse: collapse;
+}
+
+
+.tableStyle{
+  display: flex;
+  justify-content: center;
+  padding-top: 2rem;
+}
+
+table tr{
+height: 35px;
+border-bottom: 2px solid rgb(168, 168, 168);
+}
+
+td{
+  padding-left: 7%;
+}
+
+.table-head{
+  font-weight: bold;
+}
+
+input{
+  background-color: transparent;
+  width: 12rem;
+    height: 2rem;
+    border-radius: 10px;
+    border: 2px solid black;
+    /* padding: 40px; */
+    /* margin: 45px; */
+}
+
+.updateBut{
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+
+.updateButton{
+  font-size: 15px;
+    padding: 8px 20px;
+    border-radius: 15px;
+}
+
+.subContainer {
+  display: flex;
+  gap: 101px;
+}
+
+.inputCont{
+  display: flex;
+  justify-content: center;
+  height: 10rem;
+  gap: 50px;
+  flex-direction: column;
+  /* align-content: center; */
+  align-items: center;
+}
+
+
+.myInput::placeholder{
+  color:black
+}
+
+.myInput:focus{
+ border: 2px solid red;
+}
+
+.coolinput {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: fit-content;
+  position: static;
+  max-width: 240px;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
+
+
+
+
